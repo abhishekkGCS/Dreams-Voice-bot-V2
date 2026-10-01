@@ -1,7 +1,42 @@
-.env
-venv/
+﻿# Virtual Environments (DO NOT COMMIT)
 .venv/
+mvenv/
+venv/
+env/
+
+# Python Cache & Bytecode
 __pycache__/
-*.pyc
-*.log
-.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Node.js & Dashboard Dependencies / Builds
+**/node_modules/
+**/dist/
+**/build/
+.npm
+*.tsbuildinfo
+
+# Sensitive Credentials & Keys
+.env
+.env.*
+*.env
+
+# Large Binary Installers, Archives & Media
+*.exe
+*.msi
+*.rar
+*.zip
+*.tar
+*.gz
+*.7z
+
+# OS Metadata
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Temporary migration scripts
+backend/patch_*.py
+backend/restore.py
